@@ -1,4 +1,4 @@
-# Jenga Web
+# Jenga Payment Services
 
 Current website - [https://www.equitel.com/](https://www.equitel.com/)
 
