@@ -626,9 +626,9 @@ ul.tab-list2 li p {
 	background: #c81685;
 }
 .help-section {
-	padding:3rem 0 4rem; 
-	text-align: center;
-	color: #FFF;
+    padding: 4rem 0 5rem;
+    text-align: center;
+    color: #FFF;
 }
 ul.helpmenu {
 	margin: 0 auto;
@@ -644,10 +644,8 @@ ul.helpmenu li a {
 	padding: 5px 0;
 }
 ul.helpmenu li.active a {
-    color: #e09667;
-    border-bottom: 1px solid #FFF;
-    color: #FFF;
-
+	border-bottom: 2px solid #FFF;
+	color: #FFF;
 }
 ul.helpmenuli a, ul.helpmenu li a:after, ul.helpmenu li a:before {
  transition: all .5s;
