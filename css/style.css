@@ -688,14 +688,14 @@ section.reci-lg.contact-area {
 	padding: 0 3rem;
 }
 .contacts-content h3:after {
-	content: '';
-	display: block;
-	margin-top: 3px;
-	background: #c81685;
-	width: 40px;
-	height: 2px;
-	border-radius: 1px;
-	margin-bottom: 20px;
+    content: '';
+    display: block;
+    margin-top: 10px;
+    background: #000;
+    width: 40px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 20px;
 }
 .contacts-form h3 {
 	padding: 0 0 2rem;
@@ -748,8 +748,10 @@ section.reci-lg.contact-area {
 	padding: 0 3rem;
 }
 .callus-small h3 {
-	font-size:20px;
-	margin: 15px 0 15px;
+    font-size: 22px;
+    margin: 15px 0 15px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 /* -------------------------------- 
