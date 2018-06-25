@@ -447,7 +447,7 @@ h2.client-hd{
     text-align: left;
 }
 .plan-detail-row.is-stripped{
-    background: #fffafd;
+    background: #fbfbfb;
 }
 .flex-space {
     display: flex;
@@ -688,14 +688,14 @@ section.reci-lg.contact-area {
 	padding: 0 3rem;
 }
 .contacts-content h3:after {
-	content: '';
-	display: block;
-	margin-top: 3px;
-	background: #c81685;
-	width: 40px;
-	height: 2px;
-	border-radius: 1px;
-	margin-bottom: 20px;
+    content: '';
+    display: block;
+    margin-top: 10px;
+    background: #000;
+    width: 40px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 20px;
 }
 .contacts-form h3 {
 	padding: 0 0 2rem;
@@ -707,7 +707,7 @@ section.reci-lg.contact-area {
 	top: 20px;
 	bottom: 20px;
 	content: '';
-	background: linear-gradient(to bottom, #fff 0%, #c81685 10%, #c81685 90%, #fff 100%);
+	background:linear-gradient(to bottom, #fff 0%, #bdbdbd 10%, #e4d7df 90%, #fff 100%);
 }
 .contacts-form p {
 	padding:10px 0 25px;
@@ -748,26 +748,20 @@ section.reci-lg.contact-area {
 	padding: 0 3rem;
 }
 .callus-small h3 {
-	font-size:20px;
-	margin: 15px 0 15px;
+    font-size: 22px;
+    margin: 15px 0 15px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
-
-
-
 /* -------------------------------- 
-
 Primary style
-
 -------------------------------- */
-
 
 a.cd-faq-trigger {
   color: #404040;
   text-decoration: none;
 }
-
-
 .cd-faq {
   width: 90%;
   max-width: 1024px;
@@ -782,7 +776,7 @@ a.cd-faq-trigger {
 @media only screen and (min-width: 768px) {
   .cd-faq {
     position: relative;
-    margin: 4em auto;
+    margin: 4em auto 6rem;
     box-shadow: none;
   }
 }
