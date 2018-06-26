@@ -133,14 +133,11 @@ ul.navbar-nav.navigation li {
 }
 ul.navbar-nav.navigation li a{
 	font-size:15px;
-	letter-spacing: 1px;
 	color: #526D85;
 	line-height: 65px;
 	padding: 0 10px 1px;
 	font-weight: 600;
 	display: block;
-	filter: alpha(Opacity=75);
-	opacity: .75;	
 }
 ul.navbar-nav.navigation li a:hover,
 ul.navbar-nav.navigation li a:focus{
@@ -759,6 +756,9 @@ section.reci-lg.contact-area {
 Primary style
 -------------------------------- */
 
+/**::after, *::before {
+    content: '';
+}*/
 a.cd-faq-trigger {
   color: #404040;
   text-decoration: none;
@@ -796,6 +796,7 @@ a.cd-faq-trigger {
 .cd-faq-categories a::before, 
 .cd-faq-categories a::after {
   /* plus icon on the right */
+  content: '';
   position: absolute;
   top: 50%;
   right: 16px;
@@ -848,6 +849,7 @@ a.cd-faq-trigger {
   }
   .cd-faq-categories a::before {
     /* decorative rectangle on the left visible for the selected item */
+    content: '';
     display: block;
     top: 0;
     right: auto;
@@ -944,7 +946,7 @@ a.cd-faq-trigger {
 }
 .cd-close-panel {
   position: fixed;
-  top: 5px;
+  top: 4rem;
   right: -100%;
   display: block;
   height: 40px;
@@ -952,7 +954,7 @@ a.cd-faq-trigger {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  z-index: 2;
+  z-index:99;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -964,9 +966,11 @@ a.cd-faq-trigger {
   -webkit-transition: right 0.4s;
   -moz-transition: right 0.4s;
   transition: right 0.4s;
+  color:#000;
 }
 .cd-close-panel::before, .cd-close-panel::after {
   /* close icon in CSS */
+  content: '';
   position: absolute;
   top: 16px;
   left: 12px;
@@ -1191,37 +1195,279 @@ h2.client-hd {
     font-size: 18px;
 }
 }
- @media screen and (max-width:1050px) {
+@media screen and (max-width:1100px) {
+.banner-info p {
+    font-size: 16px;
+}
+.col-abtinfo h2 {
+    font-size: 16px;
+}
+.col-abtinfo p {
+    font-size: 14px;
+}
+.footer-content h3 {
+    font-size: 20px;
+}
+.help-section h2 {
+    font-size: 24px;
+}
+}
+@media screen and (max-width:1024px) {
 .pricingarea {
     width: 95%;
     margin: 0 auto;
 }
+.bannerpic-img {
+    height: 500px;
 }
-@media screen and (max-width:760px) {
- .tab-list {
- width:100%;
- text-align: left;
- margin-right:0;
+.picleft-main {
+    margin-top: 7rem;
+}
+.banner-info a {
+    font-size: 14px;
+}
+.mainsection {
+    margin-top: 6rem;
+}
+.mainheader {
+    margin-top: 2rem;
+}
+.mainheader h3 {
+    font-size: 18px;
+}
+.pricingarea {
+    padding: 3rem 0;
+}
+.contacts-content {
+    width: 98%;
+}
+.banner-info h1 {
+    margin-top: 6rem;
+    font-size: 21px;
+}
+h2.client-hd {
+    font-size: 24px;
+}
+}
+@media screen and (max-width:990px) {
+.clientpic {
+    margin: 18px;
+    width: 14%;
+    display: inline-block;
+}
+.clientpic img{
+	width: 100%;
+}
+.navbar-collapse.collapse.show {
+    background: #FFF;
+}
+ul.navbar-nav.navigation li a{
+	font-size:14px;
+	line-height:1;
+	padding:14px 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+ul.navbar-nav.navigation li:last-child a{
+	border-bottom: none;
+}
+.pricingarea {
+    width: 100%;
+}
+.tab-contentholder {
+    width: 100%;
 }
 .tab-list2 {
- width: 100%;
- text-align: left;
+    width: 48%;
+}
+.tab-list {
+    width: 48%;
+    padding-right: 2%;
+}
+.contacts-form:before {
+    position: absolute;
+    right: 0;
+    width:0;
+    top: 20px;
+    bottom: 20px;
+    content: '';
+    background:none;
+}
+.contacts-content .col-sm-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}	
+.contacts-content .col-sm-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contacts-form {
+    margin: 0;
+    padding: 0 1rem;
+}
+.contacts-form h3 {
+    padding: 0 0 15px;
+}
+.callus-small {
+    margin-bottom: 10px;
+    padding: 0 1rem;
+}	
+}
+@media screen and (max-width:900px) {
+.container {
+    max-width: 98%;
+}
+.pricingarea {
+    width: 92%;
+}
+.plan-detail-cell p {
+    font-size: 12px;
+}	
+}
+@media screen and (max-width:810px) {
+.bannerpic-img {
+    height: auto;
+}
+.bannerpic-img {
+    width: 100%;
+    position: relative;
+    background-image: none;
+}
+.bannerpic {
+    height: auto;
+}
+.picleft-main {
+    margin-top: 4rem;
+    float: right;
+    margin-right: 1rem;
+}
+.banner-info h1 {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+.mainsection {
+    margin-top: 3rem;
+}
+.help-section {
+    padding: 2rem 0 3rem;
+}
+i.helpicons {
+    font-size:2.5em;
+    padding: 0 0 10px;
+}
+.contactusright {
+    margin-top: 20px;
+}
+}
+@media screen and (max-width:760px) {
+.tab-list {
+	width:100%;
+	text-align: left;
+	margin-right:0;
+}
+.tab-list2 {
+	width: 100%;
+	text-align: left;
+}
+.navbar-brand {
+    width: 17%;
+}
+.navbar-brand img{
+    width:100%;
+}
+.footer-content {
+    margin: 15px 0 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 25px;
+}
+.footer-content h3 {
+    font-size:21px;
+    padding-bottom: 15px;
+}
+.bannerpic {
+    position: relative;
+    width:90%;
+    margin: 0 auto;
+}
+.banner-mn .col-sm-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.picleft-main {
+    margin-top: 0;
+    float: right;
+    margin-bottom:1rem;
+}
+.banner-info {
+    padding: 0 5rem;
+    text-align: center;
+}
+.mainfooter {
+    padding: 20px 0 0;
+}
+.tab-container {
+    width: 100%;
+    float: none;
+}
+.tab-content {
+    width:70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.tab-list li.active::before, .tab-list li:hover::before {
+    content: "";
+    font-size:0;
+}
+.tab-list2 li.active::after, .tab-list2 li:hover::after {
+    content: "";
+    font-size:0;
+}
+.pricing-plan-item.col-sm-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-bottom: 1px solid #D8D8D8;
+    border-right: none;
+}
+.cd-faq-items {
+    width:100%;
+    top: 3.8rem;
+}
+.cd-faq-categories a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 28px 0 16px;
+    background-color: #4e5359;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    white-space: nowrap;
+    border-bottom: 1px solid #555b61;
+    text-overflow: ellipsis;
 }
 }
 @media screen and (max-width: 580px){
 .pricingarea {
-    width: 85%;
-    
+    width: 85%;  
 }
 .pricing-plan-item {
-     border-right: 0 solid #D8D8D8; 
-    flex: auto;
-    padding: 20px;
-    justify-content: flex-start;
+	border-right: 0 solid #D8D8D8; 
+	flex: auto;
+	padding: 20px;
+	justify-content: flex-start;
 }
 @media screen and (max-width:340px) {
 .tab-contentholder {
     width: 80%;
-    
 }
 }
