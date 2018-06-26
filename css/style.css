@@ -1456,6 +1456,48 @@ i.helpicons {
     text-overflow: ellipsis;
 }
 }
+@media screen and (max-width:700px){
+.clientpic {
+    margin: 15px;
+    width: 12%;
+}
+}
+@media screen and (max-width:600px){
+.plan-detail-row {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.mainheader h1 {
+    font-size: 22px;
+}
+.mainheader h3 {
+    font-size: 16px;
+}
+.pricingarea {
+    padding: 2rem 0;
+}
+.pricing-plan-item-footer {
+    min-height: auto;
+    margin-bottom: 10px;
+}
+.pricing-item-content {
+    height: auto;
+    margin-bottom: 10px;
+}
+.pricing-item-header h2 {
+    font-size:22px;
+    margin-bottom: 10px;
+}
+.pricing-item-header h3{
+    font-size:21px;
+}
+.cd-faq-items {
+    top:3.5rem;
+}
+.clientpic {
+    width: 20%;
+}
+}
 @media screen and (max-width: 580px){
 .pricingarea {
     width: 85%;  
@@ -1465,6 +1507,10 @@ i.helpicons {
 	flex: auto;
 	padding: 20px;
 	justify-content: flex-start;
+}
+.navbar-brand {
+    width: 20%;
+}
 }
 @media screen and (max-width:340px) {
 .tab-contentholder {
