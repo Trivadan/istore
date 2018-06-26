@@ -1132,7 +1132,25 @@ margin-top: 0;
     display: block;
   }
 }
-
+.cd-faq-content ol li {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #6c7d8e;
+    list-style: disc;
+}
+.cd-faq-content ol li + li {
+    margin-top: 10px;
+}
+.cd-faq-content ol {
+    padding: 0 1rem;
+}
+.cd-faq-content a{
+	color: #c81685;
+}
+.cd-faq-content a:hover{
+	color: #000;
+}
 
 /********Media Querry*************/
 
