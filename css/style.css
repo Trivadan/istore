@@ -785,16 +785,12 @@ a.cd-faq-trigger {
     position: relative;
     display: block;
     overflow: hidden;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 28px 0 16px;
-    background-color: #808284;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #ffffff;
+    color: #404040;
     white-space: nowrap;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
     text-overflow: ellipsis;
+    padding: 14px 20px;
 }
 .cd-faq-categories a::before, 
 .cd-faq-categories a::after {
@@ -821,14 +817,11 @@ a.cd-faq-trigger {
   .cd-faq-categories {
     width: 20%;
     float: left;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);*/
   }
   .cd-faq-categories a {
     font-size: 13px;
-    font-size: 0.8125rem;
     font-weight: 600;
-    padding-left: 24px;
-    padding: 0 24px;
     -webkit-transition: background 0.2s, padding 0.2s;
     -moz-transition: background 0.2s, padding 0.2s;
     transition: background 0.2s, padding 0.2s;
@@ -868,6 +861,8 @@ a.cd-faq-trigger {
   }
   .cd-faq-categories .selected {
     background: #c81685 !important;
+    color: #FFF;
+    border-radius: 4px;
   }
   .cd-faq-categories .selected::before {
     opacity: 1;
