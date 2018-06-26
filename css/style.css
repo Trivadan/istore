@@ -1497,6 +1497,9 @@ i.helpicons {
 .clientpic {
     width: 20%;
 }
+.contactusright p {
+    font-size: 14px;
+}
 }
 @media screen and (max-width: 580px){
 .pricingarea {
@@ -1511,9 +1514,100 @@ i.helpicons {
 .navbar-brand {
     width: 20%;
 }
+ul.helpmenu li {
+    margin: 0 2em;
+    font-size:14px;
 }
-@media screen and (max-width:340px) {
+}
+@media screen and (max-width:480px){
+.footer-content h3 {
+    font-size: 18px;
+}
+ul.helpmenu li {
+    margin: 0 1em;
+}
+.help-section h2 {
+    font-size: 21px;
+}
+.help-section {
+    padding: 2rem 0;
+}
+ul.helpmenu {
+    padding: 2em 0 0;
+}
+.contacts-content h3:after {
+    width: 25px;
+}
+.banner-info {
+    padding: 0 2rem;
+}
+h2.client-hd {
+    font-size: 18px;
+}
 .tab-contentholder {
-    width: 80%;
+    width: 90%;
+}
+ul.tab-list2 li p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+ul.tab-list2 li h4 {
+    font-size: 16px;
+}
+ul.tab-list li h4 {
+    font-size: 16px;
+}
+ul.tab-list li p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.pricing-item-content h3{
+    font-size: 22px;
+}	
+}
+@media screen and (max-width:380px){
+.banner-info {
+    padding: 0 1rem;
+}
+.clientpic {
+    width: 33.33333%;
+}
+.navbar-brand {
+    width: 30%;
+}
+.banner-info h1 {
+    font-size: 16px;
+}
+.banner-info p {
+    font-size: 14px;
+}
+.mainheader h3 {
+    font-size: 14px;
+}
+.contacts-form {
+    padding: 0;
+}
+.callus-small {
+    margin-bottom: 10px;
+    padding:0;
+}
+.footer-content ul li a {
+    font-size: 12px;
+}
+.btm-footer p {
+    font-size: 12px;
+}	
+}
+@media screen and (max-width:360px) {
+.tab-contentholder {
+    width:96%;
+}
+.cd-faq-categories a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.navbar-brand {
+    width: 35%;
 }
 }
