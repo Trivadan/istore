@@ -407,12 +407,15 @@ h2.client-hd{
 }
 .mainheader{
     width: 100%;
-    margin-top: 3rem;
+    padding-top:2rem;
 }
 .mainheader h1{
-	font-size: 35px;
-	margin-bottom: 20px;
-	font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    /*margin-top: 20px;
+    width:100%;
+    display: inline-block;*/
 }
 .mainheader h3{
 	line-height: 1.5;
