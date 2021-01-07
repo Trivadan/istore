@@ -1540,6 +1540,9 @@ button::-moz-focus-inner {
   margin-bottom: 22px;
   line-height: 25px;
 }
+.footer-icon {
+    margin-top: 15px;
+}
 .footer-icon a {
   color: #9f9f9f;
   font-size: 14px;
